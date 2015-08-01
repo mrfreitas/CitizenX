@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="main">#6A9B9B</color>
+	<color name="main_button_dark">#ff578787</color>
+	<color name="main_button_darker">#ff4c7878</color>
+	<color name="btn_login">#ff7cb9b9</color>
+	<color name="btn_login_dark">#ff65aaaa</color>
+	<color name="accent">#009688</color>
+	<color name="notification">#fff64a3a</color>
+	<color name="main_dark">#ff518383</color>
+	<color name="red_react">#D13F31</color>
+	<color name="red_react_dark">#ffb94031</color>
+	<color name="dash_elem_click">#40ffffff</color>
+	<color name="card_elem_click">#40999999</color>
+	<color name="blue_organize">#4E7999</color>
+	<color name="blue_organize_dark">#ff3f6281</color>
+	<color name="grey_trailblaze">#9D9D9D</color>
+	<color name="grey_trailblaze_dark">#ff858585</color>
+	<color name="grey_1">#ffc8c8c8</color>
+	<color name="divider">#ffdddddd</color>
+	<color name="main_background">#ffe1e1e1</color>
+	<color name="card_background">#ffffffff</color>
+	<color name="white">#ffffffff</color>
+
+	<color name="colorHighlight">#B6B6B6</color>
+</resources>
+

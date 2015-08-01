@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Title/main strings -->
+    <string name="app_name">Citizen X</string>
+    <string name="action_settings">Settings</string>
+    <string name="react">React</string>
+    <string name="reaction">Reaction</string>
+    <string name="organize">Organize</string>
+    <string name="trailblaze">Trailblaze</string>
+    <string name="trail">Trail</string>
+    <string name="attachments">Attachments</string>
+    <string name="comments">Comments</string>
+    <string name="details">Details</string>
+    <string name="map_view">Map view</string>
+    <string name="location">Location</string>
+    <string name="descTitle">Description Title</string>
+
+    <string name="title_activity_react">React</string>
+    <string name="title_activity_organize">Organize</string>
+    <string name="title_activity_trailblaze">Trailblaze</string>
+    <string name="title_activity_user">User</string>
+    <string name="title_activity_create_trail">create_trail</string>
+    <string name="title_activity_react_detail">Reaction</string>
+    <string name="title_activity_trail_detail">Trail</string>
+    <string name="title_activity_find_organized_group">Find Groups</string>
+    <string name="title_activity_create_account">Create Account</string>
+
+    <!-- User strings -->
+    <string name="user">User</string>
+    <string name="logout">Logout</string>
+    <string name="following">Following</string>
+    <string name="my_reacts">My Reacts</string>
+    <string name="my_groups">My Groups</string>
+    <string name="my_trails">My Trails</string>
+    <string name="invitation">Invitation</string>
+
+    <!-- Warning strings -->
+    <string name="nothing_yet">Nothing yet</string>
+    <string name="select_user_image">"Select user image"</string>
+
+    <!-- Strings for action -->
+    <string name="follow">Follow</string>
+    <string name="report">Report</string>
+    <string name="new_group">Create Group</string>
+    <string name="find_group">Find Organized Groups</string>
+    <string name="new_organize">Organize</string>
+    <string name="create_reaction">Create Reaction</string>
+    <string name="create_trail">Create Trail</string>
+
+    <!-- Organize strings -->
+    <string name="my_private">Private</string>
+    <string name="open">Open</string>
+
+    <!-- Validation Strings -->
+    <string name="empty_validation">Need to be filed</string>
+    <string name="email_validation">This e-mail is not valid</string>
+    <string name="conf_email_validation">The e-mails do not match</string>
+    <string name="password_validation">This password is not valid, the minimum length is 6</string>
+    <string name="conf_password_validation">The passwords do not match</string>
+    <string name="name_validation">This name is not valid</string>
+    <string name="network_validation">Network is not available</string>
+
+    <!-- Error Strings -->
+    <string name="user_data_incorrect">Email or password are incorrect</string>
+
+    <!-- Temp strings -->
+    <string name="title">Title</string>
+
+    <string-array name="tabs">
+        <item>Invites</item>
+        <item>Following</item>
+        <item>React</item>
+        <item>Organize</item>
+        <item>Trailblaze</item>
+    </string-array>
+
+    <string-array name="alert_create_account">
+        <item>From camera</item>
+        <item>From gallery</item>
+    </string-array>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="exit">Press Back again to Exit.</string>
+    <string name="create_account">Create account</string>
+    <string name="submit">submit</string>
+    <string name="email">E-mail</string>
+    <string name="confirm_email">Confirm e-mail</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="user_image">User image</string>
+
+</resources>

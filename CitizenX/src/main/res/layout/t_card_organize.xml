@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/card_padding"
+        android:background="@color/card_background">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/toDetail"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lollipop_android5"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="70"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="7dp">
+                <TextView
+                        android:text="@string/title"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/groupTitle"
+                        android:textColor="#000"
+                        android:gravity="center_vertical"
+                        android:padding="2dp"
+                        android:textSize="20sp" />
+                <TextView
+                        android:text="@string/my_private"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/priv_open"
+                        android:textColor="@color/blue_organize"
+                        android:gravity="center_vertical"
+                        android:padding="2dp"
+                        android:textSize="20sp" />
+                <TextView
+                        android:text="Description"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/descriptionTxt_RD"
+                        android:textColor="#000"
+                        android:gravity="center_vertical"
+                        android:padding="2dp"
+                        android:textSize="16sp"/>
+            </LinearLayout>
+    </LinearLayout>
+    <include
+            layout="@layout/t_divider"
+            />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="33"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+            <ImageButton
+                    android:src="@drawable/ic_vote_grey600_36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton1"
+                    android:background="@drawable/card_button"
+                    android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="33"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+            <ImageButton
+                    android:src="@drawable/ic_place_grey600_36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton2"
+                    android:background="@drawable/card_button"
+                    android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="33"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+            <ImageButton
+                    android:src="@drawable/ic_flag_grey600_36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton3"
+                    android:background="@drawable/card_button"
+                    android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

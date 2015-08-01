@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_background"
+                tools:context=".Dashboard">
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/t_tool_bar"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:scrollbars="none"
+            android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:background="@color/card_background"
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/margin_3"
+                    >
+                <include
+                        android:id="@+id/react_toolbar"
+                        layout="@layout/t_tool_bar"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/content_height"
+                        android:orientation="horizontal"
+                        android:background="@color/card_background"
+                        android:id="@+id/reactContent"
+                        android:padding="5dp"
+                        android:weightSum="@integer/card_weightSum"
+                        android:layout_gravity="center_horizontal">
+
+	                <!-- Container view to scroll horizontally which gives the carousel effect -->
+	                <HorizontalScrollView android:layout_width="match_parent"
+	                                      android:layout_height="wrap_content"
+	                                      android:background="#D13F31"
+	                                      android:scrollbars="none">
+		                <!-- Carousel items container - lays out items horizontally -->
+		                <LinearLayout android:id="@+id/reactCarousel"
+		                              android:layout_width="0dp"
+		                              android:layout_height="wrap_content"
+		                              android:orientation="horizontal"/>
+
+	                </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/margin_3"
+                    android:layout_marginTop="@dimen/margin_3"
+                    >
+
+                <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:background="@color/card_background"
+                        android:layout_width="fill_parent"
+                        android:orientation="vertical"
+                        >
+                  <!--  <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/back_organize"
+                            android:orientation="horizontal"
+                            >
+                        <TextView
+                                android:theme="@style/category_title"
+                                android:text="@string/organize"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/catTitle_height"
+                                android:layout_weight="@integer/catTitle_weight"
+                                android:id="@+id/organize_title"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center|left"/>
+                        <ImageButton
+                                android:src="@drawable/ic_place_white_24dp"
+                                android:layout_width="@dimen/icons"
+                                android:layout_height="match_parent"
+                                android:id="@+id/organizeMapView"
+                                android:background="@drawable/dash_button"
+                                android:layout_marginRight="@dimen/label_elemMarginR"
+                                android:layout_marginEnd="@dimen/label_elemMarginR"
+                                />
+                        <ImageButton
+                                android:src="@drawable/ic_add_white_24dp"
+                                android:layout_width="@dimen/icons"
+                                android:layout_height="match_parent"
+                                android:id="@+id/organizeAdd"
+                                android:background="@drawable/dash_button"
+                                android:scaleType="fitCenter"
+                                android:layout_marginRight="@dimen/label_elemMarginR"
+                                android:layout_marginEnd="@dimen/label_elemMarginR"
+                                />
+
+                    </LinearLayout>   -->
+                    <include
+                            android:id="@+id/organize_toolbar"
+                            layout="@layout/t_tool_bar"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/content_height"
+                            android:orientation="horizontal"
+                            android:background="@color/card_background"
+                            android:id="@+id/organizeContent"
+                            android:padding="5dp"
+                            android:weightSum="@integer/card_weightSum"
+                            android:layout_gravity="center_horizontal">
+                        <!--    <ImageView
+									android:layout_width="0dp"
+									android:layout_height="match_parent"
+									android:layout_weight="50"
+									android:adjustViewBounds="true"
+									android:scaleType="centerCrop"
+									android:src="@drawable/lollipop_android5"
+									/>           -->
+                        <!-- Container view to scroll horizontally which gives the carousel effect -->
+                        <HorizontalScrollView android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:background="#D13F31"
+                                              android:scrollbars="none">
+                            <!-- Carousel items container - lays out items horizontally -->
+                            <!-- Carousel items container - lays out items horizontally -->
+                            <LinearLayout android:id="@+id/organizeCarousel"
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:orientation="horizontal"/>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:layout_marginBottom="@dimen/margin_3">
+                    <include
+                            android:id="@+id/trail_toolbar"
+                            layout="@layout/t_tool_bar"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/content_height"
+                            android:orientation="horizontal"
+                            android:background="@color/card_background"
+                            android:id="@+id/trailContent"
+                            android:padding="5dp"
+                            android:weightSum="@integer/card_weightSum"
+                            android:layout_gravity="center_horizontal">
+
+                        <!-- Container view to scroll horizontally which gives the carousel effect -->
+                        <HorizontalScrollView android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:background="#D13F31"
+                                              android:scrollbars="none">
+                            <!-- Carousel items container - lays out items horizontally -->
+                            <LinearLayout android:id="@+id/trailCarousel"
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:orientation="horizontal"/>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

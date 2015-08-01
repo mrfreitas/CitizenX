@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.miti.citizenx" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".React"
+            android:label="@string/title_activity_react"
+            android:parentActivityName=".Dashboard" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard" />
+        </activity>
+        <activity
+            android:name=".Organize"
+            android:label="@string/title_activity_organize"
+            android:parentActivityName=".Dashboard" >
+        </activity>
+        <activity
+            android:name=".Trailblaze"
+            android:label="@string/title_activity_trailblaze"
+            android:parentActivityName=".Dashboard" >
+        </activity>
+        <activity
+            android:name=".CreateReact"
+            android:label="@string/create_reaction" >
+        </activity>
+        <activity
+            android:name=".User"
+            android:label="@string/title_activity_user"
+            android:parentActivityName=".Dashboard" >
+        </activity>
+        <activity
+            android:name=".CreateTrail"
+            android:label="@string/title_activity_create_trail" >
+        </activity>
+        <activity
+            android:name=".ReactDetail"
+            android:label="@string/title_activity_react_detail" >
+        </activity>
+        <activity
+            android:name=".TrailDetail"
+            android:label="@string/title_activity_trail_detail" >
+        </activity>
+        <activity
+            android:name=".FindOrganizedGroup"
+            android:label="@string/title_activity_find_organized_group" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".CreateAccount"
+            android:label="@string/title_activity_create_account"
+            android:parentActivityName=".Login">
+        </activity>
+    </application>
+
+</manifest>

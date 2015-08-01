@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.miti.citizenx.User">
+	<item
+			android:id="@+id/a_More"
+			android:icon="@drawable/ic_more_vert_white_24dp"
+			app:showAsAction="always"
+			android:title="More">
+		<menu>
+			<item android:id="@+id/logout"
+			      android:title="@string/logout"
+			      android:orderInCategory="100"
+			      app:showAsAction="never"/>
+		</menu>
+	</item>
+</menu>

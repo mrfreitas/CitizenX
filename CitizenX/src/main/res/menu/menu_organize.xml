@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.miti.citizenx.Organize">
+
+	<item android:id="@+id/rDash_mapView"
+	      android:icon="@drawable/ic_place_white_24dp"
+	      android:title="@string/map_view"
+	      android:orderInCategory="100"
+	      app:showAsAction="ifRoom"/>
+	<item android:id="@+id/search_organize"
+	      android:icon="@drawable/ic_search_white_24dp"
+	      android:title="@string/find_group"
+	      android:orderInCategory="100"
+	      app:showAsAction="ifRoom"/>
+	<item android:id="@+id/organize_add"
+	      android:icon="@drawable/ic_add_white_36dp"
+	      android:title="@string/new_organize"
+	      android:orderInCategory="105"
+	      app:showAsAction="ifRoom"/>
+</menu>

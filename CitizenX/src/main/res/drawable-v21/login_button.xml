@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/main_button_darker">
+	<item android:drawable="@drawable/login_button_template"/>
+</ripple>

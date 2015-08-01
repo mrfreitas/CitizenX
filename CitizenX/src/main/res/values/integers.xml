@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="catTitle_weight">66</integer>
+	<integer name="card_weightSum">100</integer>
+	<integer name="titleElements_weight">13</integer>
+</resources>
